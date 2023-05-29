@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assent/css/buttonAdmin.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+      <div class="card mx-4 mx-md-5 shadow-5-strong" 
+        style=" margin-top: 5%; background: hsla(0, 0%, 100%, 0.616);backdrop-filter: blur(30px); ">
+        <div class="card-body py-5 px-md-5">
+          <div id="panel_usuarios_admin" class="container-fluid col-12 col-lg-9 container-web-page scroll overflow-auto h-75" >
+              <h1 class="text-center poppins-regular">Listado De Citas</h1>
+              <button class="Btn" id="mostrarModal">Agendar 
+                <svg class="svg" viewBox="0 0 512 512">
+                  <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"></path></svg>
+              </button>          
+              <table class="table table-bordered poppins-regular">
+                  <thead class="text-center">
+                      <tr>
+                          <th><Strong>No.</Strong></th>
+                          <th><strong>Fecha</strong></th>
+                          <th><strong>Consultorio</strong></th>
+                          <th><strong>Eliminar</strong></th>
+                      </tr>
+                  </thead>
+                  <tbody id="body_tabla_citas" class="text-center">
+                    
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- modals -->
+  <div class="modal fade" id="agendaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div class="login-box" >
+            <form>
+              <div class="user-box">
+                <input type="text" id="idDocumento"  placeholder="CC. Paciente">
+                <label>CC Paciente</label>
+              </div>
+              <div class="user-box">
+                <input type="text"  id="idFecha" placeholder="dd/mm/aa">
+                <label>Fecha</label>
+              </div>
+              <div class="user-box">
+                <select class="form-control mb-2" id="idConsultorio">
+                  <option selected>...</option>
+                  <option value="1">Uno</option>
+                  <option value="2">Dos</option>
+                  <option value="3">Tres</option>
+                  <option value="4">Cuatro</option>
+                  <option value="5">Cinco</option>
+                </select>
+              </div>
+              <center>
+              <a href="#" id="btnAgendar">
+                     AGENDAR
+                 <span></span>
+              </a>
+            </center>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module"  src="../Controllers/adminController.js"></script>
+    <script type="module"  src="../Controllers/tablaCitasController.js"></script>
+</body>
+</html>

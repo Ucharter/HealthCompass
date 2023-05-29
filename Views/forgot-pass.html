@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assent/css/tailwind.min.css">
+    <title>Reestablecer Contraseña</title>
+</head>
+
+<body class="bg-gray-200">
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <img class="mx-auto h-10 w-auto" src="../assent/img/logo.jpg" alt="Your Company">
+            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Envianos tu correo
+                para Reestablecer tu contraseña</h2>
+        </div>
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm shadow-xl rounded-b-lg p-10">
+            <form class="space-y-6" id="formCheck">
+                <div>
+                    <label class="block text-sm font-medium leading-6 text-gray-900">Correo
+                        Electronico</label>
+                    <div class="mt-2">
+                        <input id="email" placeholder="Correo Electronico" type="email" autocomplete="email"
+                            class="block w-full rounded-md border-0 py-2 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="text-sm">
+                    <a href="../index.html" class="font-semibold text-blue-600 hover:text-blue-500">¿Tienes cuenta?</a>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Reestablecer
+                        Contraseña</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="../assent/js/checkForgot.js"></script>
+</body>
+
+</html>

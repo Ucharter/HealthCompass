@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assent/js/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./assent/css/tailwind.min.css"> -->
+    <link rel="stylesheet" href="./assent/css/styleLoginAdmin.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm" id="result">
+            <img class="mx-auto h-10 w-auto" src="./assent/img/logo.jpg" alt="Your Company">
+            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Inicia Sesión al
+                Administrador</h2>
+        </div>
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm shadow-xl rounded-b-lg ">
+            <form class="space-y-6" id="formCheck">
+                <div>
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Correo
+                        Electronico</label>
+                    <div class="mt-2">
+                        <input id="email" name="email" placeholder="Correo Electronico" type="email"
+                            class="block w-full rounded-md border-0 py-2 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center justify-between">
+                        <label class="block text-sm font-medium leading-6 text-gray-900">Contraseña</label>
+                    </div>
+                    <div class="mt-2">
+                        <input id="password" placeholder="Contraseña" type="password" autocomplete="current-password"
+                            class="block w-full rounded-md border-0 py-2 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="text-sm">
+                    <a href="./Views/forgot-pass.html"
+                        class="font-semibold text-blue-600 hover:text-blue-500">¿Olvidaste tu Contraseña?</a>
+                </div>
+                <div>
+                    <button type="submit" id="btnSubmit"
+                        class="button">Inicia Sesión
+                    </button>
+                    <hr>
+                </div>
+            </form>
+                <button id="btnPatient"
+                    class="button2">
+                    Soy un Paciente
+                </button>
+        </div>
+    </div> -->
+    
+
+    <!-- section form -->
+    <div class="container">
+        <input id="signup_toggle" type="checkbox">
+        <form class="form" id="formCheck">
+            <div class="form_front">
+                <div class="form_details">
+                    HEALTH COMPASS<br/>
+                    <center>Login Admin</center>
+                </div>
+                <input type="text" id="email" class="input" placeholder="Correo">
+                <input type="password" id="password" class="input" placeholder="Password">
+                <button class="btn" type="submit" id="btnSubmit" >Login</button>
+                <hr>
+                <button class="btn" id="btnPatient">Soy un paciente</button>
+            </div>
+        </form>
+    </div>
+    <!-- . -->
+
+
+    <script type="module" src="./assent/js/checkLogin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
